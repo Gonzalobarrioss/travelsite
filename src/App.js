@@ -6,7 +6,7 @@ import Home from './pages';
 function App() {
   return (
       <>
-          <HashRouter base='https://gonzalobarrioss.github.io/Portfolio/'>
+          <HashRouter base='https://gonzalobarrioss.github.io/travelsite/'>
             <Routes>
               <Route path='/' element={ <Home />} />
             {/*  <Route path='/signin' element={ <SigninPage />} />
