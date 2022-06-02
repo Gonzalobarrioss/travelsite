@@ -1,7 +1,7 @@
 import React, {useState}  from 'react'
-import Sidebar from '../Sidebar'
+import Aside from '../Aside'
 import Navbar from '../Navbar'
-import { HeaderContainer } from './HeaderElements'
+import { HeaderContainer, HeaderLogo, HeaderToggle } from './HeaderElements'
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false)
@@ -10,10 +10,20 @@ function Header() {
         setIsOpen(!isOpen)
     }
   return (
-    <HeaderContainer>
-        <Sidebar isOpen={isOpen} toggle={toggle} />
-        <Navbar toggle={toggle} />
-    </HeaderContainer>
+
+      <HeaderContainer>
+        <HeaderLogo href="#">Water.</HeaderLogo>
+        <HeaderToggle onClick={toggle}></HeaderToggle>
+          {/*
+          <a href="#" class="logo">Water.</a>
+          <div class="toggle" onclick="menuToggle()"></div>
+          <Sidebar isOpen={isOpen} toggle={toggle} />
+          <Navbar toggle={toggle} /> 
+          
+          */}
+      </HeaderContainer>
+   
+ 
   )
 }
 

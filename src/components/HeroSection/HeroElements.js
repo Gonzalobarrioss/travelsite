@@ -1,42 +1,31 @@
 import styled from 'styled-components'
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
+
+
 export const HeroContainer = styled.div`
-    background: #0c0c0c;
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script:wght@700&display=swap');
+
+
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
-    height: 800px;
     position: relative;
-    z-index: 1;
-
-    :before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%),
-                    linear-gradient(180deg, rgba(0,0,0,0.2), 0%, transparent 100%);
-        z-index: 2;
-    }
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
 `
 
 export const HeroBg = styled.div`
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
 `
 
 export const VideoBg = styled.video`
-    width: 100%:
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
@@ -44,43 +33,55 @@ export const VideoBg = styled.video`
 `
 
 export const HeroContent = styled.div`
-    z-index: 3;
-    max-width: 1200px;
-    position: absolute;
-    padding: 8px 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    transition: 0.5s;
+    transition-delay: 1s;
+    width: 100%;
+
+    &.active{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-200px);
+        transition-delay: 0s;
+    }
 `
 
 export const HeroH1 = styled.h1`
+    position: relative;
     color: #fff;
-    font-size: 48px;
-    text-align: center;
+    font-size: 10vw;
+    line-height: 0.55em;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    font-family: "Dancing Script", cursive;
 
-    @media screen and (max-width: 768px){
-        font-size: 40px;
+    @media screen and (max-width: 981px){
+        font-size: 18vw;
     }
 
-    @media screen and (max-width: 480px){
-        font-size: 32px;
+    span{
+        font-size: 0.2em;
+        font-weight: 300;
+        letter-spacing: 5px;
+        background: #fff;
+        color: #111;
+        padding: 0 10px;
+        text-shadow: 0 5px 5px rgba(0, 0, 0, 0);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+
+        @media screen and (max-width: 981px){
+            font-size: 0.25em;
+            letter-spacing: 2px;
+            padding: 0 5px;
+        }
     }
+    
 `
 
-export const HeroP = styled.p`
-    margin-top: 24px;
-    color: #fff;
-    font-size: 24px;
-    text-align: center;
-    max-width: 600px;
-
-    @media screen and (max-width: 768px){
-        font-size: 24px;
-    }
-
-    @media screen and (max-width: 480px){
-        font-size: 18px;
-    }
+export const HeroP = styled.span`
+      
 `
 
 export const HeroBtnWrapper = styled.div`

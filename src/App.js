@@ -1,11 +1,14 @@
 import { /*BrowserRouterHashRouter as Router*/HashRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages';
+
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 //import SigninPage from './pages/signin'
 //import About from './pages/AboutMe'
 
 function App() {
   return (
-      <>
+      <Provider store={store}>
           <HashRouter base='https://gonzalobarrioss.github.io/travelsite/'>
             <Routes>
               <Route path='/' element={ <Home />} />
@@ -13,7 +16,7 @@ function App() {
               <Route path='/cv' element={ <About />} /> */}
             </Routes>
           </HashRouter>
-      </>
+      </Provider>
   )
 }
 

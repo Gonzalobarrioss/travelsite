@@ -27,13 +27,13 @@ const HeroSection = () => {
             <VideoBg autoPlay loop muted src={Video} type='video/mp4' style={{width:'100%', height: '100%'}}/>
         </HeroBg>
         <HeroContent>
-            <HeroH1>Virtual Banking Made East</HeroH1>
+            <HeroH1>Happiness...<br /><span>crystal clear ocean water</span></HeroH1>
             <HeroP>
-                Sing up for a new account today and receive $250 in credit towards your next payment
+                
             </HeroP>
             <HeroBtnWrapper>
                 <Button 
-                    to='singup' 
+                    to='/' 
                     onMouseEnter={onHover} 
                     onMouseLeave={onHover}
                     primary='true'
@@ -44,7 +44,7 @@ const HeroSection = () => {
                     exact="true"
                     offset={-80}
                 >
-                    Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+                    Start Travel {hover ? <ArrowForward /> : <ArrowRight />}
                 </Button>
             </HeroBtnWrapper>
         </HeroContent>
