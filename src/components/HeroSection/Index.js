@@ -28,16 +28,12 @@ const HeroSection = () => {
         </HeroBg>
         <HeroContent>
             <HeroH1>Happiness...<br /><span>crystal clear ocean water</span></HeroH1>
-            <HeroP>
-                
-            </HeroP>
+            {/*
             <HeroBtnWrapper>
                 <Button 
                     to='/' 
                     onMouseEnter={onHover} 
                     onMouseLeave={onHover}
-                    primary='true'
-                    dark='true'
                     $smooth={true} 
                     duration={500}
                     $spy={true}
@@ -46,7 +42,7 @@ const HeroSection = () => {
                 >
                     Start Travel {hover ? <ArrowForward /> : <ArrowRight />}
                 </Button>
-            </HeroBtnWrapper>
+            </HeroBtnWrapper>*/ }
         </HeroContent>
     </HeroContainer>
   )
