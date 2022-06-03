@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../ButtonElement'
+//import Button  from '../Buttons/index'
 
 import {
     InfoContainer, 
@@ -13,7 +13,8 @@ import {
     Subtitle, 
     BtnWrap,
     ImgWrap,
-    Img
+    Img,
+    Button
 } from './InfoElements'
 //import img from '../../images/bussines_woman.svg'
 
@@ -47,16 +48,20 @@ const InfoSection = (props) => {
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <BtnWrap>
-                                    <Button to='home'
-                                        $smooth={true} 
+                                    <Button 
+                                        to='/download'
+                                        smooth={true} 
                                         duration={500}
-                                        $spy={true}
+                                        spy={true}
                                         exact="true"
-                                        offset={-80}
+                                        offset={0}
                                         primary={primary ? 1 : 0}
                                         dark={dark ? 1 : 0}
                                         dark2={dark2 ? 1 : 0}
-                                    >{buttonLabel}</Button>
+                                        onClick={() => console.log("Clic")}
+                                    >
+                                        {buttonLabel}
+                                    </Button>
                                 </BtnWrap>
                             </TextWrapper>
                         </Column1>

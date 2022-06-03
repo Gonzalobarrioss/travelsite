@@ -1,11 +1,11 @@
 
-export const TOGGLE_ON = 'TOGGLE_ON';
+export const TOGGLE_STATUS = 'TOGGLE_STATUS';
 
 
 
-export const showChatbot = status => dispatch => {
+export const toggle = status => dispatch => {
     dispatch({
-      type: TOGGLE_ON,
+      type: TOGGLE_STATUS,
       payload: status
     });
 };

@@ -29,33 +29,28 @@ const Footer = () => {
             <FooterLinksContainer>
                 <FooterLinksWrapper>
                     <FooterLinkItems>
-                        <FooterLinkTitle>About Us</FooterLinkTitle>
-                        <FooterLink to='/'>How it works</FooterLink>
-                        <FooterLink to='/'>Testimonials</FooterLink>
-                        <FooterLink to='/'>Careers</FooterLink>
-                        <FooterLink to='/'>Investors</FooterLink>
-                        <FooterLink to='/'>Terms of Service</FooterLink>
+                        <FooterLinkTitle>Sobre nosotros</FooterLinkTitle>
+                        <FooterLink to='/'>Quienes somos</FooterLink>
+                        <FooterLink to='/'>Testimonios</FooterLink>
+                        <FooterLink to='/'>Terminos de servicio</FooterLink>
                     </FooterLinkItems>
                     <FooterLinkItems>
-                        <FooterLinkTitle>Contact Us</FooterLinkTitle>
-                        <FooterLink to='/'>Contact</FooterLink>
-                        <FooterLink to='/'>Support</FooterLink>
-                        <FooterLink to='/'>Destinations</FooterLink>
-                        <FooterLink to='/'>Sponsorship</FooterLink>
+                        <FooterLinkTitle>Contactenos</FooterLinkTitle>
+                        <FooterLink to='/'>Contacto</FooterLink>
+                        <FooterLink to='/'>Soporte</FooterLink>
+                        <FooterLink to='/'>Sponsors</FooterLink>
                     </FooterLinkItems>
                 </FooterLinksWrapper>
                 <FooterLinksWrapper>
                     <FooterLinkItems>
                         <FooterLinkTitle>Videos</FooterLinkTitle>
-                        <FooterLink to='/'>Submit Video</FooterLink>
-                        <FooterLink to='/'>Ambassadors</FooterLink>
-                        <FooterLink to='/'>Agency</FooterLink>
+                        <FooterLink to='/'>Envia tu video</FooterLink>
+                        <FooterLink to='/'>Agencia</FooterLink>
                         <FooterLink to='/'>Influencer</FooterLink>
                     </FooterLinkItems>
                     <FooterLinkItems>
-                        <FooterLinkTitle>Social Media</FooterLinkTitle>
+                        <FooterLinkTitle>Redes sociales</FooterLinkTitle>
                         <FooterLink to='/'>Instagram</FooterLink>
-                        <FooterLink to='/'>Facebook</FooterLink>
                         <FooterLink to='/'>Youtube</FooterLink>
                         <FooterLink to='/'>Twitter</FooterLink>
                     </FooterLinkItems>
@@ -64,9 +59,9 @@ const Footer = () => {
             <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to='/' onClick={toggleHome}>
-                        dolla
+                        TRAVEL
                     </SocialLogo>
-                    <WebsiteRights>dolla {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                    <WebsiteRights>Gonzalo Barrios {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                     <SocialIcons>
                         <SocialIconLink href='//www.instagram.com/' target='_blank' aria-label='Instagram'>
                             <FaInstagram />

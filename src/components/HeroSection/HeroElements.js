@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
-
+import {MdKeyboardArrowRight, MdArrowForward, MdOutlineArrowDownward} from 'react-icons/md'
+import { Link as LinkS } from 'react-scroll'
 
 
 export const HeroContainer = styled.div`
@@ -38,7 +38,11 @@ export const HeroContent = styled.div`
     text-align: center;
     transition: 0.5s;
     transition-delay: 1s;
-    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     &.active{
         opacity: 0;
@@ -84,11 +88,48 @@ export const HeroP = styled.span`
       
 `
 
+export const ArrowButton = styled(LinkS)`
+    display: flex;
+    background: #fff;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px 5px;
+    width: 30px;
+    height: 30px;
+    color: #111;
+    
+    transition: 0.5s;
+
+    &:hover{
+        transform: scale(1.2);       
+    }
+
+    &.active{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-200px);
+        transition-delay: 0s;
+    }
+`
+
+
+
 export const HeroBtnWrapper = styled.div`
     margin-top: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #fff;
+    height: 2px;
+    width: 10px;
 `
 
 export const ArrowForward = styled(MdArrowForward)`
@@ -99,4 +140,8 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
     font-size: 20px;
+`
+export const ArrowDown = styled(MdOutlineArrowDownward)`
+    
+    
 `

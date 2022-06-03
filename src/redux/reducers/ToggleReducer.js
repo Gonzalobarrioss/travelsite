@@ -1,4 +1,4 @@
-import { TOGGLE_ON } from "../actions/ToggleAction";
+import { TOGGLE_STATUS } from "../actions/ToggleAction";
 
 const initialState = {
     status: false,
@@ -6,7 +6,7 @@ const initialState = {
 
 function toggleReducer(state = initialState, action) {
     switch (action.type) {
-        case TOGGLE_ON:
+        case TOGGLE_STATUS:
             return { ...state, status: action.payload };
         default:
             return state;

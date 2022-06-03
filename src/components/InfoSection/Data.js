@@ -1,18 +1,18 @@
-export const homeObjOne = {
+export const about = {
     id: 'about',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'Premium Bank',
-    headline: 'Unlimited Transactions whit zero fees',
-    description: 'Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.',
-    buttonLabel: 'Get started',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Inicia tu viaje',
+    headline: 'Experiencias únicas garantizadas',
+    description: 'Descarga nuestra app y recibe notificaciones sobre los mejores descuentos para vos.',
+    buttonLabel: 'Comenzar',
     imgStart: false,
-    img: require('../../images/credit_card.svg').default,
+    img: require('../../assets/images/mobile_app.svg').default,
     alt: 'Bussines_Woman',
-    dark: true,
-    primary: true,
-    darkText: false
+    dark: false,
+    primary: false,
+    darkText: true
 }
 export const homeObjTwo = {
     id: 'discover',
@@ -24,7 +24,7 @@ export const homeObjTwo = {
     description: 'We have you covered no matter where you are located. All you need is an internet connection and a phone or computer',
     buttonLabel: 'Learn More',
     imgStart: true,
-    img: require('../../images/data.svg').default,
+    img: require('../../assets/images/data.svg').default,
     alt: 'Bussines_Woman',
     dark: false,
     primary: true,
@@ -41,7 +41,7 @@ export const homeObjThree = {
     darkText: true,
     buttonLabel: 'Start Now',
     imgStart: true,
-    img: require('../../images/interview.svg').default,
+    img: require('../../assets/images/interview.svg').default,
     alt: 'Bussines_Woman',
     dark: false,
     primary: false,
