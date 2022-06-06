@@ -13,7 +13,7 @@ function Aside() {
     return (
     <AsideContainer className={ toggleStatus ? 'active' : null}>
         <AsideList >
-            <AsideItem var={1}>
+         {/*   <AsideItem var={1}>
                 <AsideLink 
                     to='about'                    
                     smooth={true}
@@ -22,10 +22,10 @@ function Aside() {
                     exact="true"
                     offset={0}
                     onClick={() =>store.dispatch(toggle(!toggleStatus))}
-                >Home</AsideLink>
-            </AsideItem>
+                >Inicio</AsideLink>
+                </AsideItem>  */}
             <AsideItem 
-                var={2}>
+                var={1}>
                 <AsideLink 
                     to='about'                     
                     smooth={true}
@@ -35,30 +35,30 @@ function Aside() {
                     offset={0}
                     onClick={() => store.dispatch(toggle(!toggleStatus))}
                 >
-                    About
+                    Principal
                 </AsideLink>
+            </AsideItem>
+            <AsideItem var={2}>
+                <AsideLink
+                    to='servicios'                   
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={0}
+                    onClick={() => store.dispatch(toggle(!toggleStatus))}
+                >Servicios</AsideLink>
             </AsideItem>
             <AsideItem var={3}>
                 <AsideLink
-                    to='about'                   
+                    to='contacto'                 
                     smooth={true}
                     duration={500}
                     spy={true}
                     exact="true"
                     offset={0}
                     onClick={() => store.dispatch(toggle(!toggleStatus))}
-                >Tour</AsideLink>
-            </AsideItem>
-            <AsideItem var={4}>
-                <AsideLink
-                    to='about'                 
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={0}
-                    onClick={() => store.dispatch(toggle(!toggleStatus))}
-                >Contact</AsideLink>
+                >Contacto</AsideLink>
             </AsideItem>
         </AsideList>
     </AsideContainer>

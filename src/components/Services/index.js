@@ -2,6 +2,7 @@ import React from 'react'
 import Icon1 from '../../assets/images/credit_card.svg'
 import Icon2 from '../../assets/images/data.svg'
 import Icon3 from '../../assets/images/bussines_woman.svg'
+import Icon4 from '../../assets/images/online_video.svg'
 import { 
     ServicesContainer,
     ServicesH1,
@@ -14,23 +15,28 @@ import {
 
 const Services = () => {
   return (
-    <ServicesContainer id='services'>
-        <ServicesH1>Our Services</ServicesH1>
+    <ServicesContainer id='servicios'>
+        <ServicesH1>Servicios</ServicesH1>
         <ServicesWrapper>
             <ServicesCard>
                 <ServicesIcon src={Icon1}/>
-                <ServicesH2>Reduce expenses</ServicesH2>
-                <ServicesP>We help reduce your fess and increase your overall revenue.</ServicesP>
+                <ServicesH2>Boletería 24hs</ServicesH2>
+                <ServicesP>Ahora podes comprar tus pasajes desde la app en cualquier momento.</ServicesP>
             </ServicesCard>
             <ServicesCard>
                 <ServicesIcon src={Icon2}/>
-                <ServicesH2>Virtual Offices</ServicesH2>
-                <ServicesP>You can access our platform online anywhere in the world.</ServicesP>
+                <ServicesH2>Plan familiar</ServicesH2>
+                <ServicesP>Disfrutá tus vacaciones al máximo con quienes queres estar.</ServicesP>
             </ServicesCard>
             <ServicesCard>
                 <ServicesIcon src={Icon3}/>
-                <ServicesH2>Premium Benefits</ServicesH2>
-                <ServicesP>Unlock our special membership card that returns 5% cash back.</ServicesP>
+                <ServicesH2>Canjea tus puntos</ServicesH2>
+                <ServicesP>Con la compra de servicios acumulás puntos y participas de sorteos exclusivos.</ServicesP>
+            </ServicesCard>
+            <ServicesCard>
+                <ServicesIcon src={Icon4}/>
+                <ServicesH2>Compartí tu experiencia</ServicesH2>
+                <ServicesP>Subiendo un video de tu experiencia travel podes ganarte un smartphone.</ServicesP>
             </ServicesCard>
         </ServicesWrapper>
     </ServicesContainer>

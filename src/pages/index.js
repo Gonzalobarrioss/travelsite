@@ -15,6 +15,8 @@ import Aside from '../components/Aside'
 
 import { useSelector } from 'react-redux'
 import Blur from 'react-css-blur'
+import Contact from '../components/Contact'
+import BackToTop from '../components/BackToTop'
 
 const Home = () => {
 
@@ -28,27 +30,16 @@ const Home = () => {
       <Aside/>
 
       <HeroSection  />
-
+      
       <Blur radius={ toggleStatus ? '20px' : '0' } transition="2500ms">
- 
+        
         <InfoSection {...about}  />
+        <BackToTop />
+        <Services />
+        <Contact />
+        
         <Footer />
-      </Blur>
-     {/* <Main>
-      
-        <InfoSection {...about}/>
-            <Skills />
-            <Works />
-            <Services />
-            {/*<InfoSection {...homeObjTwo}/>
-            <Services />
-            <InfoSection {...homeObjThree}/>
-           
- 
-      </Main>
-         
-    <Footer /> */}
-      
+      </Blur>     
     </LayoutContainer>
   )
 }

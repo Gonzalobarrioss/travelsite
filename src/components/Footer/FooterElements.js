@@ -6,7 +6,8 @@ export const FooterContainer = styled.footer`
    
     z-index: 10;
     
-
+    display: flex;
+    position: relative;
     //border-right: 40px solid #201522;
 `
 export const FooterWrap = styled.div`
@@ -69,7 +70,7 @@ export const FooterLink = styled(Link)`
     font-size: 14px;
 
     &:hover {
-        color: #01bf71;
+        text-decoration: underline;
         transition: 0.3s ease-out;
     }
 `
@@ -116,7 +117,7 @@ export const SocialIconLink = styled.a`
     font-size: 24px;
 
     &:hover {
-        color: #01bf71;
+        color: ${props => props.color};
         transition: 0.3s ease-out;
     }
 `

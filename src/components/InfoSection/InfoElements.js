@@ -4,7 +4,7 @@ import { Link as LinkR} from 'react-router-dom'
 export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#fff' : '#010606')};
-    min-height: 100vh;
+    min-height: 860px;
     width: 100%;
     
     @media screen and (max-width: 768px) {

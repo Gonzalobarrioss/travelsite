@@ -17,6 +17,7 @@ import {
     Button
 } from './InfoElements'
 //import img from '../../images/bussines_woman.svg'
+import BackToTop from '../BackToTop'
 
 const InfoSection = (props) => {
 
@@ -72,6 +73,7 @@ const InfoSection = (props) => {
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>
+            
             </InfoContainer>   
         </>
   )

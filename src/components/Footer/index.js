@@ -63,19 +63,19 @@ const Footer = () => {
                     </SocialLogo>
                     <WebsiteRights>Gonzalo Barrios {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                     <SocialIcons>
-                        <SocialIconLink href='//www.instagram.com/' target='_blank' aria-label='Instagram'>
+                        <SocialIconLink href='//www.instagram.com/ponja__' target='_blank' aria-label='Instagram' color='#c32aa3'>
                             <FaInstagram />
                         </SocialIconLink>
-                        <SocialIconLink href='//www.facebook.com/' target='_blank' aria-label='Facebook'>
+                        <SocialIconLink href='//www.facebook.com/' target='_blank' aria-label='Facebook' color='#1877f2'>
                             <FaFacebook />
                         </SocialIconLink>
-                        <SocialIconLink href='//www.youtube.com/' target='_blank' aria-label='Youtube'>
+                        <SocialIconLink href='//www.youtube.com/' target='_blank' aria-label='Youtube' color='#ff0000'>
                             <FaYoutube />
                         </SocialIconLink>
-                        <SocialIconLink href='//www.twitter.com/' target='_blank' aria-label='Twitter'>
+                        <SocialIconLink href='//www.twitter.com/ponja_mw' target='_blank' aria-label='Twitter' color='#1da1f2'>
                             <FaTwitter />
                         </SocialIconLink>
-                        <SocialIconLink href='//www.linkedin.com/' target='_blank' aria-label='LinkedIn'>
+                        <SocialIconLink href='https://www.linkedin.com/in/gonzaloezequielbarrios/' target='_blank' aria-label='LinkedIn' color='#0000ff'>
                             <FaLinkedin />
                         </SocialIconLink>
                     </SocialIcons>
